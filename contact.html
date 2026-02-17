@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แสดงความคิดเห็น - เสน่ห์เมืองตรัง</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Sarabun:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased bg-teal-50 min-h-screen flex flex-col">
+
+    <nav class="glass-nav py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold font-heading text-teal-700 flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> กลับหน้าหลัก
+            </a>
+        </div>
+    </nav>
+
+    <div class="flex-grow container mx-auto px-4 flex items-center justify-center py-10">
+        <div class="bg-white rounded-2xl shadow-xl w-full max-w-lg p-8 relative overflow-hidden border border-teal-100">
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 text-teal-600 text-2xl">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <h2 class="text-3xl font-heading font-bold text-gray-800">แสดงความคิดเห็น</h2>
+                <p class="text-slate-500 mt-2">คำแนะนำของคุณช่วยให้เราพัฒนาเว็บไซต์ให้ดียิ่งขึ้น</p>
+            </div>
+
+            <form action="https://formspree.io/f/maqdjnzd" method="POST" id="feedback-form" class="space-y-5">
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">ชื่อของคุณ</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-user absolute left-3 top-3 text-gray-400"></i>
+                        <input type="text" name="name" required class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition" placeholder="ระบุชื่อ">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">อีเมล (เพื่อการติดต่อกลับ)</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-envelope absolute left-3 top-3 text-gray-400"></i>
+                        <input type="email" name="email" required class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition" placeholder="name@example.com">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">ข้อความ / ข้อเสนอแนะ</label>
+                    <textarea name="message" rows="4" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition" placeholder="เขียนความคิดเห็นของคุณที่นี่..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> ส่งความคิดเห็น
+                </button>
+            </form>
+
+            <div id="form-status" class="mt-4 text-center hidden"></div>
+        </div>
+    </div>
+
+    <script src="form-handler.js"></script>
+</body>
+</html>

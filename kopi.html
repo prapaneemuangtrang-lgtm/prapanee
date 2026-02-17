@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สภากาแฟยามเช้า - เสน่ห์เมืองตรัง</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Sarabun:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased bg-amber-50">
+
+    <nav class="glass-nav py-4 shadow-sm sticky top-0 z-50 border-b border-amber-200">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold font-heading text-amber-800 flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> กลับหน้าหลัก
+            </a>
+            <span class="text-amber-700 font-bold"><i class="fa-solid fa-mug-hot"></i> สภากาแฟเมืองตรัง</span>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-12">
+        <div class="text-center mb-16 reveal active">
+            <span class="text-amber-600 font-bold tracking-wider text-sm bg-amber-100 px-4 py-1 rounded-full">Trang's Breakfast Culture</span>
+            <h1 class="text-4xl md:text-5xl font-heading font-bold text-gray-800 mt-4 mb-4">เมืองคนช่างกิน</h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">"มาตรัง ต้องตื่นเช้า" คำกล่าวนี้ไม่เกินจริง เพราะเสน่ห์ของเมืองตรังเริ่มต้นขึ้นตั้งแต่พระอาทิตย์ยังไม่ขึ้น ที่ร้านกาแฟและติ่มซำ</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-16 reveal active">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="image-card h-64 row-span-2">
+                    <img src="image/kopi.jpg" alt="Dim Sum" class="w-full h-full object-cover">
+                </div>
+                <div class="image-card h-30">
+                    <img src="image/timsom.jpg" alt="Coffee" class="w-full h-full object-cover">
+                </div>
+                <div class="image-card h-30">
+                    <img src="image/mooyang0.jpg" alt="Roast Pork" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">ติ่มซำ โกปี๊ และหมูย่าง</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center shrink-0 text-amber-700 text-xl">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">โกปี๊ (กาแฟโบราณ)</h3>
+                            <p class="text-slate-600 mt-1">สภากาแฟคือจุดรวมตัวของชาวตรังทุกเพศทุกวัย กาแฟโบราณรสเข้มข้น กินคู่กับปาท่องโก๋ (ที่คนตรังเรียกว่า "จาโก้ย")</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center shrink-0 text-orange-600 text-xl">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">ติ่มซำนึ่งสด (แต่เตี้ยม)</h3>
+                            <p class="text-slate-600 mt-1">ฮะเก๋า ขนมจีบ ซาลาเปา วางเรียงรายให้เลือกเต็มโต๊ะ เอกลักษณ์คือการสั่งมาเต็มโต๊ะ กินไม่หมดไม่ต้องจ่าย คืนได้!</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center shrink-0 text-red-600 text-xl">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">หมูย่างเมืองตรัง</h3>
+                            <p class="text-slate-600 mt-1">ขาดไม่ได้บนโต๊ะอาหารเช้า หมูย่างหนังกรอบรสหวานนำ สับเป็นชิ้นพอดีคำ ทานคู่กับกาแฟดำเข้ากันอย่างประหลาด</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
